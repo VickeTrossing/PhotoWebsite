@@ -17,7 +17,7 @@ a{text-decoration: none;}
 
 #body{
     scroll-behavior: smooth!important;
-    background: rgb(255, 255, 255);
+    background: rgb(122, 122, 122);
     padding: 10px;
     padding-bottom: 60px;
 }
@@ -76,32 +76,54 @@ a{text-decoration: none;}
 
 
 #h1Text{
-    text-align: left;
+    text-align: center;
+    text-decoration: dashed;
 }
 
 /*----------------------------Body content---------------------------------*/
 
 .box{
+    /* width: 150px; */
     font-size: 50px;
-    border: 1px solid black;
-    background-color: #686868;
+    /* border: 1px solid black; */
+    /* background-color: #686868; */
     color: rgb(146, 137, 137);
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     font-weight: 300;
     box-sizing: border-box;
-    width: 300px;
+    flex-basis: 50%; 
+}
+
+.box:nth-of-type(3n){
+    flex-basis: 100%;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+}
+
+.middle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexbox-middle{
+    align-content: center;
+    width: 65%;
     display: flex;
+    width: fit-content;
     border: 8px solid black;
-    height: 80vh;
-    flex-direction: column;
+    /* height: 80vh; */
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
+
 
 /*----------------------------Footer content-----------------------------*/
 .footer{
