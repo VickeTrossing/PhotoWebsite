@@ -1,23 +1,28 @@
-body{
-    scroll-behavior: smooth!important;
+html{scroll-behavior: smooth;}
+
+
+html, body{
     margin: 0;
     padding: 0;
-    height: 100%;
+    /* height: 100%; */
 }
 
-.header-bottom, a:hover{
+ a:hover{
     text-decoration: none!important;
-    color: rgb(146, 137, 137)!important;}
+    color: rgb(184, 176, 176)!important;
+}
 
 a:visited{color:rgb(146, 137, 137);}
 
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+    color: rgb(146, 137, 137);
+}
 
 
 
 #body{
-    scroll-behavior: smooth!important;
-    background: rgb(122, 122, 122);
+    background: rgb(218, 218, 218);
     padding: 10px;
     padding-bottom: 60px;
 }
@@ -83,14 +88,8 @@ a{text-decoration: none;}
 /*----------------------------Body content---------------------------------*/
 
 .box{
-    /* width: 150px; */
-    font-size: 50px;
-    /* border: 1px solid black; */
-    /* background-color: #686868; */
-    color: rgb(146, 137, 137);
-    /* padding: 10px; */
+     background-color: rgb(218, 218, 218); 
     text-align: center;
-    font-weight: 300;
     box-sizing: border-box;
     flex-basis: 50%; 
 }
@@ -111,16 +110,19 @@ a{text-decoration: none;}
 }
 
 .flexbox-middle{
+    background-color: rgb(218, 218, 218);
     align-content: center;
     width: 65%;
     display: flex;
     width: fit-content;
-    border: 8px solid black;
-    /* height: 80vh; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.about-me{
+    background-color: black;
 }
 
 
@@ -133,9 +135,11 @@ a{text-decoration: none;}
 }
 
 .footer .footer-content{
+    background: #303036;
     border: 1px solid red;
     height: 350px;
     display: flex;
+
 }
 
 .footer .footer-content .footer-section{
@@ -156,6 +160,8 @@ a{text-decoration: none;}
     padding-top: 20px;
     padding-bottom: 35px;
 }
+
+.footer a{color: #d3d3d3;}
 
 
 
